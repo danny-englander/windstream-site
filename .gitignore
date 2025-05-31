@@ -49,3 +49,6 @@ web/.DS_Store
 
 # Misc
 *.Identifier
+
+# Custom theme
+web/themes/custom/windstream
