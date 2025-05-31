@@ -1,0 +1,13 @@
+uuid: 5e18d72a-38a3-40d4-a303-96d9500207c4
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: GBOXT2oPid8CPDG3oFxF_5QYPEOBtADnZvlqY_e7FS8
+id: media.medium
+label: Medium
+description: ''
+targetEntityType: media
+cache: true
