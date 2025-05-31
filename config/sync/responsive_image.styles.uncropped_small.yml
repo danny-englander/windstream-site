@@ -6,6 +6,7 @@ dependencies:
     - image.style.uncropped_300w_webp
   theme:
     - olivero
+    - windstream
 _core:
   default_config_hash: U13C9GPgeAZyWtnEn7aWWR48yP3-4mAndLliGh_VoSw
 id: uncropped_small
@@ -14,7 +15,7 @@ image_style_mappings:
   -
     image_mapping_type: image_style
     image_mapping: uncropped_300w_webp
-    breakpoint_id: olivero.sm
+    breakpoint_id: windstream.sm
     multiplier: 1x
 breakpoint_group: olivero
 fallback_image_style: uncropped_300w_webp

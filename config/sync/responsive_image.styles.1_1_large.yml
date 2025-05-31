@@ -8,6 +8,7 @@ dependencies:
     - image.style.1_1_960x960_focal_point_webp
   theme:
     - olivero
+    - windstream
 _core:
   default_config_hash: 8ajHzD3HYeNz0fUtaC3B4fTALuPxvjZKkVg6wr4g8kA
 id: 1_1_large
@@ -21,7 +22,7 @@ image_style_mappings:
         - 1_1_500x500_focal_point_webp
         - 1_1_600x600_focal_point_webp
         - 1_1_960x960_focal_point_webp
-    breakpoint_id: olivero.sm
+    breakpoint_id: windstream.sm
     multiplier: 1x
 breakpoint_group: olivero
 fallback_image_style: 1_1_500x500_focal_point_webp

@@ -10,6 +10,7 @@ dependencies:
     - image.style.5_2_1800x720_focal_point_webp
   theme:
     - olivero
+    - windstream
 _core:
   default_config_hash: r53rfarUKfKsYhtkVlH-z6Pj7GDn2OxaNkcH9ETAnIw
 id: hero_wide
@@ -33,7 +34,7 @@ image_style_mappings:
   -
     image_mapping_type: image_style
     image_mapping: 16_9_704x396_focal_point_webp
-    breakpoint_id: olivero.sm
+    breakpoint_id: windstream.sm
     multiplier: 1x
 breakpoint_group: olivero
 fallback_image_style: 16_9_512x288_focal_point_webp
