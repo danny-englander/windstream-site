@@ -24,5 +24,5 @@ image_style_mappings:
         - 1_1_960x960_focal_point_webp
     breakpoint_id: windstream.sm
     multiplier: 1x
-breakpoint_group: olivero
+breakpoint_group: windstream
 fallback_image_style: 1_1_500x500_focal_point_webp

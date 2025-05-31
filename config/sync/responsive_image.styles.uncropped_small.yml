@@ -17,5 +17,5 @@ image_style_mappings:
     image_mapping: uncropped_300w_webp
     breakpoint_id: windstream.sm
     multiplier: 1x
-breakpoint_group: olivero
+breakpoint_group: windstream
 fallback_image_style: uncropped_300w_webp
