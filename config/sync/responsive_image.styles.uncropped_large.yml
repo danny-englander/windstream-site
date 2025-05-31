@@ -7,7 +7,6 @@ dependencies:
     - image.style.uncropped_700w_webp
     - image.style.uncropped_960w_webp
   theme:
-    - olivero
     - windstream
 _core:
   default_config_hash: PLvQsmjLw9rloVdsiDRY9SHjtCNLLzMK3sjgjNQzi-I

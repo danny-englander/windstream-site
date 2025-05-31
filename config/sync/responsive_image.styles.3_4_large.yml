@@ -7,7 +7,6 @@ dependencies:
     - image.style.3_4_708x944_focal_point_webp
     - image.style.3_4_720x960_focal_point_webp
   theme:
-    - olivero
     - windstream
 _core:
   default_config_hash: dF-GUw56Cnp-jYucCeVt0slNMlsJhc3hKT24Fe5Kx-o
