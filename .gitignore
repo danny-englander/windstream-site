@@ -1,29 +1,57 @@
-# gitignore template for Drupal 8 projects
-#
-# earlier versions of Drupal are tracked in `community/PHP/`
-#
-# follows official upstream conventions:
-# https://www.drupal.org/docs/develop/using-composer
+# .gitignore for Drupal 9/10 Composer-based projects
 
-# Ignore configuration files that may contain sensitive information
+# --- Recipes ---
+# Ignore all recipes by default
+recipes/*
+!recipes/custom/
+!recipes/custom/**
+#!recipes/my_project/
+#!recipes/my_project/**
+
+# --- Composer-managed files & directories ---
+/web/core/
+/web/vendor/
+/web/modules/contrib/
+/web/themes/contrib/
+/web/profiles/contrib/
+/web/libraries/
+/vendor/
+composer.phar
+composer
+robo.phar
+robo
+drush.phar
+drush
+drupal.phar
+drupal
+/drush/contrib/
+
+# --- Ignore custom themes (they have their own repos) ---
+/web/themes/custom/windstream/
+
+# --- Sensitive/Environment files ---
 /web/sites/*/*settings*.php
 /web/sites/*/*services*.yml
+/web/sites/*/settings.local.php
+/web/sites/default/local.services.yml
+/web/sites/default/localdev.services.yml
+.env*
+.lando.local.yml
 
-# Ignore paths that may contain user-generated content
-/web/sites/*/files
-/web/sites/*/public
-/web/sites/*/private
-/web/sites/*/files-public
-/web/sites/*/files-private
+# --- User-generated content ---
+/web/sites/*/files/
+/web/sites/*/public/
+/web/sites/*/private/
+/web/sites/*/files-public/
+/web/sites/*/files-private/
 
-# Ignore paths that may contain temporary files
-/web/sites/*/translations
-/web/sites/*/tmp
-/web/sites/*/cache
+# --- Temporary, cache, and translations ---
+/web/sites/*/translations/
+/web/sites/*/tmp/
+/web/sites/*/cache/
+/web/sites/simpletest/
 
-# Ignore drupal core (if not versioning drupal sources)
-/web/vendor
-/web/core
+# --- Example/README/boilerplate files (Composer-managed) ---
 /web/modules/README.txt
 /web/profiles/README.txt
 /web/sites/development.services.yml
@@ -50,67 +78,34 @@
 /web/update.php
 /web/web.config
 
-# Ignore vendor dependencies and scripts
-/vendor
-/composer.phar
-/composer
-/robo.phar
-/robo
-/drush.phar
-/drush
-/drupal.phar
-/drupal
-# Drupal specific
-/drush/contrib/
-/vendor/
-/web/core/
-/web/modules/contrib/
-/web/themes/contrib/
-/web/profiles/contrib/
-/web/libraries
-/web/sites/*/settings.local.php
-/web/sites/default/local.services.yml
-/web/sites/*/files/
-/web/sites/simpletest/
-/web/sites/default/localdev.services.yml
-/web/themes/custom/solspire
-web/themes/custom/solspire
-
-# Node/NPM
-node_modules
-.yarn
-
-# Environment files
-.env
-.lando.local.yml
-
-# Databases
+# --- Databases & backups ---
 /*.sql
 /*.sql.gz
 /db/*.sql
 /db/*.sql.gz
 backups/*.sql.gz
 
-# IDE and Editor files
+# --- Node/NPM ---
+node_modules/
+.yarn
+
+# --- IDE/editor files ---
 .vscode/
 .idea/
 *.code-workspace
 
-# OS generated files
+# --- OS-generated files ---
 .DS_Store
 /.DS_Store
 web/.DS_Store
 
-# SASS/CSS
+# --- SASS/CSS ---
 /.sass-cache/
 *.css.map
 
-# Compressed files
+# --- Compressed files ---
 *.gz
 *.zip
 
-# Misc
+# --- Misc ---
 *.Identifier
-
-# Custom theme
-web/themes/custom/windstream
